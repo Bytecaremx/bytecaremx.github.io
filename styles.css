@@ -1,0 +1,344 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #1A237E;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('hero-bg.png') no-repeat center center;
+  background-size: cover;
+  filter: brightness(0.2);
+  z-index: -1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background-color: #FFC107;
+  color: #1A237E;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #1A237E;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1A237E;
+}
+
+.client-need {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.solution {
+  color: #1A237E;
+  font-weight: bold;
+}
+
+/* Why Us Section */
+.why-us {
+  background-color: #f4f4f4;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.why-us h2 {
+  color: #1A237E;
+  margin-bottom: 1.5rem;
+}
+
+./* why-us ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #666;
+} */
+.why-us ul {
+  list-style-type: none; /* Elimina los marcadores predeterminados */
+  padding-left: 0; /* Quita el espacio adicional a la izquierda */
+}
+.why-us ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.why-us-icon {
+  color: #FFC107;
+  margin-right: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 3rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1A237E, #FFC107);
+  color: #fff;
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card cite {
+  display: block;
+  font-size: 1rem;
+  color: #FFC107;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0; /* Más espacio alrededor de la sección */
+  text-align: center;
+  background-color: #1A237E; /* Fondo azul rey */
+  color: #fff; /* Texto blanco */
+}
+
+.contact h2 {
+  font-size: 2.5rem; /* Título más grande */
+  margin-bottom: 1.5rem;
+  color: #FFC107; /* Color amarillo brillante para el título */
+}
+
+#dynamic-message {
+  font-size: 1.5rem; /* Texto dinámico más grande */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #fff; /* Texto blanco */
+  font-weight: bold; /* Negrita para destacar */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* Más espacio entre los íconos */
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 3rem; /* Íconos más grandes */
+  color: #FFC107; /* Color amarillo brillante */
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.2); /* Efecto de agrandamiento en los íconos */
+}
+
+.contact-link {
+  color: #FFC107; /* Enlaces en amarillo brillante */
+  text-decoration: none;
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #fff; /* Cambia a blanco al pasar el ratón */
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.newsletter-form input {
+  padding: 1rem; /* Más relleno interno */
+  width: 100%; /* Ancho completo */
+  max-width: 400px; /* Límite máximo de ancho */
+  border: 2px solid #FFC107; /* Borde amarillo brillante */
+  border-radius: 10px;
+  font-size: 1.1rem; /* Tamaño de fuente más grande */
+  color: #333;
+}
+
+.newsletter-form button {
+  background-color: #FFC107; /* Botón amarillo brillante */
+  color: #1A237E;
+  padding: 1rem 2rem; /* Más relleno interno */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Footer */
+.footer {
+  background-color: #1A237E;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #FFC107;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+  width: 50px; /* Ancho del botón */
+  height: 50px; /* Alto del botón */
+  background-color: #25D366; /* Color verde de WhatsApp */
+  color: #fff; /* Color blanco para el ícono */
+  text-align: center;
+  line-height: 60px; /* Centra verticalmente el ícono */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el botón */
+  z-index: 1000; /* Asegura que el botón esté siempre visible */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: transform 0.3s ease; /* Efecto de elevación al pasar el ratón */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Agrandar el botón al pasar el ratón */
+}
+
+.whatsapp-icon {
+  font-size: 2rem; /* Tamaño del ícono de WhatsApp */
+}
